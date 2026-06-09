@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+conda-meta/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and experiment trackers
+*.log
+logs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+
+# Data and generated artifacts
+data/
+datasets/
+outputs/
+results/
+checkpoints/
+pretrained/
+weights/
+artifacts/
+
+# Large model files
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.bin
+
+# Temporary files
+tmp/
+temp/
+*.tmp
