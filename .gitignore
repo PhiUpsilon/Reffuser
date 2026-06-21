@@ -56,6 +56,10 @@ pretrained/
 weights/
 artifacts/
 
+# Private research material and manuscripts
+private/
+*.pdf
+
 # Large model files
 *.ckpt
 *.pth

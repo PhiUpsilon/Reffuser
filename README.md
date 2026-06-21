@@ -28,14 +28,40 @@ Reffuser/
 ├── README.md
 ├── docs/
 │   └── release_plan.md
+├── src/reffuser/
+│   ├── __init__.py
+│   └── data.py
+├── tests/
+│   └── data_smoke_test.py
+├── requirements.txt
 └── .gitignore
 ```
 
 The structure will be expanded as the cleaned code is released.
 
+## Code Release Status
+
+The Reffuser implementation is currently being cleaned, documented, and prepared for
+public release.
+
+We will progressively release the implementation, configuration files, environment
+specification, and reproducibility materials during the manuscript revision process.
+
+## Initial Utilities
+
+The initial release includes framework-independent utilities for standardizing
+multivariate time series and creating historical/future sliding windows. These utilities
+support common forecasting data preparation workflows and do not require the full model
+implementation.
+
+```bash
+pip install -r requirements.txt
+PYTHONPATH=src python tests/data_smoke_test.py
+```
+
 ## Installation
 
-Installation instructions will be added after the dependency files are finalized.
+Installation instructions will be added with the full implementation release.
 
 ## Usage
 
@@ -56,7 +82,7 @@ If this work is useful for your research, please cite our paper. The final BibTe
 
 ## License
 
-The license is not finalized yet and will be added before the full code release.
+This project is released under the [MIT License](LICENSE).
 
 ## Contact
 
