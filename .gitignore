@@ -11,6 +11,9 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Temporary generated public configurations
+baselines/Reffuser/*_public_*.py
+
 # Environments
 .env
 .env.*
@@ -27,9 +30,6 @@ dist/
 *.egg-info/
 .eggs/
 
-# Jupyter
-.ipynb_checkpoints/
-
 # IDEs and OS files
 .idea/
 .vscode/
@@ -38,26 +38,23 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Logs and experiment trackers
+# Logs, data, and generated artifacts
 *.log
 logs/
 runs/
 wandb/
-mlruns/
 tensorboard/
+/data/
+/datasets/
+/outputs/
+/results/
+/checkpoints/
+/pretrained/
+/weights/
+/artifacts/
 
-# Data and generated artifacts
-data/
-datasets/
-outputs/
-results/
-checkpoints/
-pretrained/
-weights/
-artifacts/
-
-# Private research material and manuscripts
-private/
+# Private research material and manuscript snapshots
+/private/
 *.pdf
 
 # Large model files

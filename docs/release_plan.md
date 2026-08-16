@@ -1,34 +1,25 @@
-# Reffuser Release Plan
+# Reffuser Release Checklist
 
-This document tracks the cleanup tasks for turning the manuscript code into a reproducible public repository.
+## Public Reproducibility Package
 
-## Initial Public Version
+- [x] Core Reffuser implementation
+- [x] Default PatchTST actor implementation
+- [x] DLinear backbone-sensitivity implementation
+- [x] Nine dataset configurations
+- [x] BasicTS training and evaluation runner
+- [x] Dataset preprocessing scripts
+- [x] Exact Python/package environment
+- [x] Installation instructions
+- [x] Main experiment execution script
+- [x] Result-directory and aggregation documentation
+- [x] Data and model smoke tests
 
-- [x] Add repository README
-- [x] Add project-oriented `.gitignore`
-- [x] State that the repository is under active improvement
-- [x] Add a release checklist for future updates
+## Release Procedure
 
-## Code Release
+- [x] Run all smoke tests in the pinned Reffuser environment
+- [x] Confirm documented command paths and dry-run wiring
+- [x] Record the release Git commit through the immutable tag
+- [x] Create the immutable `v1.0-r1` tag
+- [x] Publish tag-resolution instructions in the repository documentation
 
-- [ ] Add cleaned source code
-- [ ] Add model configuration files
-- [ ] Add training entry point
-- [ ] Add inference entry point
-- [ ] Add evaluation scripts
-- [ ] Add minimal smoke tests
-
-## Reproducibility
-
-- [ ] Add environment setup instructions
-- [ ] Add dataset preparation guide
-- [ ] Add checkpoint download instructions
-- [ ] Add commands for reproducing main results
-- [ ] Add expected outputs or metrics for verification
-
-## Documentation
-
-- [ ] Replace placeholder citation with final BibTeX
-- [ ] Add method overview figure or pipeline diagram
-- [ ] Add license
-- [ ] Add acknowledgements
+This checklist is intentionally separated from experimental results. Checkpoints and raw datasets are not committed to Git and must be obtained or generated according to the documentation.
